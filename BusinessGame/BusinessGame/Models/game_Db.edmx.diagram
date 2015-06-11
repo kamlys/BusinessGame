@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="38e2115d9832468ab7473d0501316400" Name="Diagram1" ZoomLevel="83">
+        <EntityTypeShape EntityType="game_DbModel.AspNetRoles" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="game_DbModel.AspNetUserClaims" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="game_DbModel.AspNetUserLogins" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="game_DbModel.AspNetUsers" Width="1.5" PointX="3" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="game_DbModel.Buildings" Width="1.5" PointX="5.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="game_DbModel.Maps" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="game_DbModel.Products" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="game_DbModel.UserBuildings" Width="1.5" PointX="8" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="game_DbModel.UserProducts" Width="1.5" PointX="3" PointY="6.875" IsExpanded="true" />
+        <AssociationConnector Association="game_DbModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_User_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="game_DbModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="game_DbModel.FK_dbo_UserBuildings_dbo_Buildings_Building_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="game_DbModel.FK_dbo_UserProducts_dbo_Products_Product_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="game_DbModel.AspNetUserRoles" ManuallyRouted="false" />
+        <AssociationConnector Association="game_DbModel.ProductsBuildings" />
+        <AssociationConnector Association="game_DbModel.AspNetUsersUserBuildings" />
+        <AssociationConnector Association="game_DbModel.AspNetUsersMaps" />
+        <AssociationConnector Association="game_DbModel.AspNetUsersUserProducts" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
